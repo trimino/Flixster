@@ -26,7 +26,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 
 <img src="portrait_walkthrough.gif" width=250><br>
-<img src="landscape_walkthrough.gif" width=300><br>
+<img src="landscape_walkthrough.gif" height=250><br>
 
 ### Notes
 Some challenges were dealing with the ConstraintLayout with Android Studio, because I was use to dealing with a RelativeLayout To help me I read codepaths documentation on ConstraintLayouts. 
