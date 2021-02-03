@@ -1,6 +1,7 @@
 package com.example.flixster;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -50,6 +51,16 @@ public class MainActivity extends AppCompatActivity {
         // set a layout manager on the recycler view
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
 
+
+        DividerItemDecoration dividerItemDecorationVertical = new DividerItemDecoration(this.getApplicationContext(),
+                DividerItemDecoration.VERTICAL);
+        dividerItemDecorationVertical.setDrawable(this.getApplicationContext().getResources().getDrawable(R.drawable.divider_line));
+
+        DividerItemDecoration dividerItemDecorationHorizontal = new DividerItemDecoration(this.getApplicationContext(),
+                DividerItemDecoration.HORIZONTAL);
+
+        rvMovies.addItemDecoration(dividerItemDecorationVertical);
+        rvMovies.addItemDecoration(dividerItemDecorationHorizontal);
 
         /* ----------------------> GET NOW PLAYING MOVIES <---------------------- */
         AsyncHttpClient client = new AsyncHttpClient();
