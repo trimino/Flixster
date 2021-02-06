@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RatingBar" parent="Theme.Flixster">
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>
+</resources>

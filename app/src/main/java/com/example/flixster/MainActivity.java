@@ -54,10 +54,12 @@ public class MainActivity extends AppCompatActivity {
 
         DividerItemDecoration dividerItemDecorationVertical = new DividerItemDecoration(this.getApplicationContext(),
                 DividerItemDecoration.VERTICAL);
-        dividerItemDecorationVertical.setDrawable(this.getApplicationContext().getResources().getDrawable(R.drawable.divider_line));
 
         DividerItemDecoration dividerItemDecorationHorizontal = new DividerItemDecoration(this.getApplicationContext(),
                 DividerItemDecoration.HORIZONTAL);
+
+        dividerItemDecorationVertical.setDrawable(this.getApplicationContext().getResources().getDrawable(R.drawable.divider_line));
+        dividerItemDecorationHorizontal.setDrawable(this.getApplicationContext().getResources().getDrawable(R.drawable.divider_line));
 
         rvMovies.addItemDecoration(dividerItemDecorationVertical);
         rvMovies.addItemDecoration(dividerItemDecorationHorizontal);
